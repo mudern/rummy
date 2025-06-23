@@ -1,0 +1,23 @@
+[package]
+name = "rummy"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+# 用于日志时间显示
+chrono = "0.4.40"
+# 用于全局日志系统
+log = "0.4.26"
+# 用于定义异步接口
+async-trait = {version = "0.1.88"}
+# 用于提供异步
+tokio = { version = "1.44.1", features = ["full"]}
+# 用于AES和RSA加密算法
+aes = "0.8.4"
+rsa = "0.9.8"
+rand = "0.8.5"
+block-modes = "0.9.1"
+# 用于CRC32校验
+crc32fast = "1.4.2"
+# 用于唯一识别uuid
+uuid = { version = "1.16.0",features = ["v4"] }
